@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SampleTestsProejct
+namespace SampleCodeBase
 {
     public class IfElseDetectExample
     {

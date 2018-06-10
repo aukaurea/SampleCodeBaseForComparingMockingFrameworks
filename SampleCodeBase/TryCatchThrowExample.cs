@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Threading;
 
-namespace SampleTestsProejct
+namespace SampleCodeBase
 {
     public class TryCatchThrowExample
     {

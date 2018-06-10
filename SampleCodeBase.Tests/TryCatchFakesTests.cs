@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Data.SqlClient;
 using Microsoft.QualityTools.Testing.Fakes;
 using NUnit.Framework;
-using SampleTestsProejct;
-using SampleTestsProejct.Fakes;
-using System.Fakes;
-using System.Threading.Fakes;
+using SampleCodeBase.Fakes;
 
-namespace SamplesTestProject.Tests
+namespace SampleCodeBase.Tests
 {
     [TestFixture]
     public class TryCatchFakesTests

@@ -1,9 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
-using SampleTestsProejct;
 using Telerik.JustMock;
 
-namespace SamplesTestProject.Tests
+namespace SampleCodeBase.Tests
 {
     [TestFixture]
     public class TryCatchJustMockTests

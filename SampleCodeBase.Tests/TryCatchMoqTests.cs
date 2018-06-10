@@ -1,10 +1,8 @@
 ﻿using System;
-using Microsoft.QualityTools.Testing.Fakes;
-using NUnit.Framework;
 using Moq;
-using SampleTestsProejct;
+using NUnit.Framework;
 
-namespace SamplesTestProject.Tests
+namespace SampleCodeBase.Tests
 {
     [TestFixture]
     public class TryCatchMoqTests

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SampleTestsProejct
+namespace SampleCodeBase
 {
     public class SampleTestDetectClass
     {
