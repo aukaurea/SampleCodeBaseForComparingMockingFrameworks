@@ -32,7 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,16 +49,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FooInternalStatic.cs" />
-    <Compile Include="FooWithProtectedMembers.cs" />
+    <Compile Include="JustMockExamples\BarExtensions.cs" />
+    <Compile Include="JustMockExamples\Calculus.cs" />
+    <Compile Include="JustMockExamples\ClassWithNonPublicMembers.cs" />
+    <Compile Include="JustMockExamples\Dinner.cs" />
+    <Compile Include="JustMockExamples\Foo.cs" />
+    <Compile Include="JustMockExamples\Foo.FooGeneric.cs" />
+    <Compile Include="JustMockExamples\FooInternal.cs" />
+    <Compile Include="JustMockExamples\FooInternalStatic.cs" />
+    <Compile Include="JustMockExamples\FooSealed.cs" />
+    <Compile Include="JustMockExamples\FooSealedInternal.cs" />
+    <Compile Include="JustMockExamples\FooStatic.cs" />
+    <Compile Include="JustMockExamples\FooVirtual.cs" />
+    <Compile Include="JustMockExamples\FooWithNotImplementedConstructor.cs" />
+    <Compile Include="JustMockExamples\FooWithProp.cs" />
+    <Compile Include="JustMockExamples\FooWithProtectedMembers.cs" />
     <Compile Include="IfElseDetectExample.cs" />
+    <Compile Include="JustMockExamples\Bar.cs" />
+    <Compile Include="JustMockExamples\FooBase.cs" />
+    <Compile Include="JustMockExamples\IFoo.cs" />
+    <Compile Include="JustMockExamples\IManager.cs" />
+    <Compile Include="JustMockExamples\NerdDinners.cs" />
+    <Compile Include="JustMockExamples\RSVP.cs" />
+    <Compile Include="JustMockExamples\UserData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleTestDetectClass.cs" />
+    <Compile Include="SimpleMultiClassExmaple\SampleClass.cs" />
     <Compile Include="TryCatchThrowExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
