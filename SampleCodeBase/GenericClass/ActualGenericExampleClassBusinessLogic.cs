@@ -45,7 +45,7 @@ namespace SampleCodeBase.GenericClass
                                                               DateTime,
                                                               ComplexRequiredGenericClass2<RequiredClass<string>>>();
 
-            // So to call ComplexNumber2 with business value above steps needs to be played.
+            // So to call ComplexNumber2 with business value above steps needs to setup with fakes.
             var x = genericExampleClass.ComplexNumber2;
         }
 
@@ -57,7 +57,7 @@ namespace SampleCodeBase.GenericClass
                     DateTime,
                     ComplexRequiredGenericClass2<RequiredClass<string>>>(r1, DateTime.Now);
 
-            // So to call ComplexByteArray with business value above steps needs to be played.
+            // So to call ComplexByteArray with business value above steps needs to setup with fakes.
             var x = genericExampleClass.ComplexByteArray;
         }
 
@@ -78,7 +78,7 @@ namespace SampleCodeBase.GenericClass
             newDictionary.Add(0, complexRequired);
             newDictionary.Add(1, complexRequired);
 
-            // So to call ComplexDictionaryItemPopulate with business value above steps needs to be played.
+            // So to call ComplexDictionaryItemPopulate with business value above steps needs to setup with fakes.
             genericExampleClass.ComplexDictionaryItemPopulate(newDictionary, complexRequired, complexRequired);
         }
 
@@ -89,7 +89,7 @@ namespace SampleCodeBase.GenericClass
                     DateTime,
                     ComplexRequiredGenericClass2<RequiredClass<string>>>(5);
 
-            // So to call CreateT1 with business value above steps needs to be played.
+            // So to call CreateT1 with business value above steps needs to setup with fakes.
             var x = genericExampleClass.CreateT1();
         }
 
@@ -100,14 +100,14 @@ namespace SampleCodeBase.GenericClass
                     DateTime,
                     ComplexRequiredGenericClass2<RequiredClass<string>>>(5);
 
-            // So to call CreateT1 with business value above steps needs to be played.
+            // So to call CreateT1 with business value above steps needs to setup with fakes.
             var x = genericExampleClass.CreateT3();
         }
 
         public void BusinessLogicWiseCalledContainsRequiredMethod3()
         {
             var t5 = new RequiredStringMethod3();
-            // So to call ContainsRequiredMethod3 with business value above steps needs to be played.
+            // So to call ContainsRequiredMethod3 with business value above steps needs to setup with fakes.
             t5.ContainsRequiredMethod3();
         }
     }

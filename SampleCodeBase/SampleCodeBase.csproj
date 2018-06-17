@@ -74,6 +74,9 @@
     <Compile Include="JustMockExamples\NerdDinners.cs" />
     <Compile Include="JustMockExamples\RSVP.cs" />
     <Compile Include="JustMockExamples\UserData.cs" />
+    <Compile Include="MethodPropertiesWithBusinessValue\ClassWithMethods.cs" />
+    <Compile Include="MethodPropertiesWithBusinessValue\ClassWithProperties.cs" />
+    <Compile Include="MethodPropertiesWithBusinessValue\IRequiredPrep.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleTestDetectClass.cs" />
