@@ -60,7 +60,7 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
         public void BusinessLogicExampleOfSameplemethod()
         {
             // You need to add these steps as fakes it could be real steps to call a method or property.
-            // You need to add these (constructor, since it is initialized in the constructor) steps with MS Fakes.
+            // You need to add these (constructor, since it is initialized in the constructor)
             var xDate = GetDynamicDate();
             var xDate2 = GetDynamicDate(_required);
             _required.RequiredDateTimeProp = xDate;
@@ -72,7 +72,7 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
         public string BusinessLogicExampleOfSamepleMethodString()
         {
             // You need to add these steps as fakes it could be real steps to call a method or property.
-            // You need to add these (constructor, since it is initialized in the constructor) steps with MS Fakes.
+            // You need to add these (constructor, since it is initialized in the constructor)
 
             // Below 3 lines capture in a private method.
             var xDate = GetDynamicDate();

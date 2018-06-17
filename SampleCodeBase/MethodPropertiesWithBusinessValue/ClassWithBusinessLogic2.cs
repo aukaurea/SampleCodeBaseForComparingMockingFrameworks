@@ -51,7 +51,7 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
 
         public string SampleMethodString()
         {
-            // You need to add these (constructor, since it is initialized in the constructor) steps with MS Fakes.
+            // You need to add these (constructor, since it is initialized in the constructor)
             // Remember there is not possibility of having the same method name like this.
             // This is just an example. So don't hard code anything.
             return this.SampleMethodString(_requiredPrep);
