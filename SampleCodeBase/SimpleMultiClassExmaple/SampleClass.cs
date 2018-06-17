@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using SampleCodeBase.JustMockExamples;
+using System.Data.SqlClient;
 
 namespace SampleCodeBase.SimpleMultiClassExmaple
 {
@@ -138,5 +138,46 @@ namespace SampleCodeBase.SimpleMultiClassExmaple
         public override string PublicAbstractStringPropertyPrivateSet { get; set; }
 
         #endregion
+    }
+
+    class InternalClass
+    {
+        public string InternalClassPublicStringProperty { get; set; }
+        public string InternalClassPublicStringPropertyPrivateGet { private get; set; }
+        public string InternalClassPublicStringPropertyPrivateSet { get; private set; }
+
+        protected void ProtectedSampleMethod(string p1, string p2)
+        {
+            var x = "";
+            var w = new SqlCommand();
+            InternalClassPublicStringProperty = "";
+
+            if (string.IsNullOrEmpty(p1))
+            {
+                // do stuff
+                throw new Exception();
+            }
+
+            try
+            {
+                // do stuff
+            }
+            catch (ArgumentException e)
+            {
+                // do stuff
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+
+                throw;
+            }
+        }
+
+        public class PublicInnerClassUnderInternalClass
+        {
+            public string PublicInnerClassUnderInternalClassPublicStringPropertyPrivateGet { private get; set; }
+            public string PublicInnerClassUnderInternalClassPrivateStringPropertyPrivateSet { get; private set; }
+        }
     }
 }

@@ -20,7 +20,12 @@ namespace SampleCodeBase
         }
 
         private string PrivateStringProperty1 { get; set; }
+
+
         private static string PrivateStaticStringProperty1 { get; set; }
+
+        public static string PrivateStaticStringProperty1Get => PrivateStaticStringProperty1;
+
         private DateTime PrivateDateTimeProperty1 { get; set; }
         private List<DateTime> PrivateListDateTimeProperty1 { get; set; }
 

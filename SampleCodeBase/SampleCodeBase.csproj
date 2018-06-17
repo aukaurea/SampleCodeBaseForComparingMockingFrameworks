@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GenericClass\ActualGenericExampleClassBusinessLogic.cs" />
+    <Compile Include="GenericClass\GenericExampleClass.cs" />
     <Compile Include="JustMockExamples\BarExtensions.cs" />
     <Compile Include="JustMockExamples\Calculus.cs" />
     <Compile Include="JustMockExamples\ClassWithNonPublicMembers.cs" />
@@ -77,10 +79,12 @@
     <Compile Include="SampleTestDetectClass.cs" />
     <Compile Include="SimpleMultiClassExmaple\SampleClass.cs" />
     <Compile Include="TryCatchThrowExample.cs" />
+    <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Readme.md" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

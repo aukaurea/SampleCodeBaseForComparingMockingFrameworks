@@ -5,53 +5,20 @@ namespace SampleCodeBase.JustMockExamples
 {
     public partial class Foo : IFoo
     {
+        public delegate void EchoEventHandler(bool echoed);
+
         static Foo()
         {
             throw new NotImplementedException();
         }
 
-        public static void Submit()
-        {
-        }
-
         public static int FooProp
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
+            get => throw new NotImplementedException();
+            set => throw new NotImplementedException();
         }
 
-        public Foo()
-        {
-        }
-        public int Execute(int arg1, int arg2)
-        {
-            throw new NotImplementedException();
-        }
-        public delegate void EchoEventHandler(bool echoed);
-        public event EchoEventHandler OnEchoCallback;
-
-        public List<object> RealCollection
-        {
-            get { return collection; }
-        }
-        private List<object> collection;
-
-        public IList<object> FakeCollection()
-        {
-            List<object> resultCollection = new List<object>();
-
-            resultCollection.Add("asd");
-            resultCollection.Add(123);
-            resultCollection.Add(true);
-
-            return resultCollection;
-        }
+        public List<object> RealCollection { get; }
 
         internal virtual string Value
         {
@@ -60,6 +27,35 @@ namespace SampleCodeBase.JustMockExamples
         }
 
         private static int PrivateStaticProperty { get; set; }
+
+        public void Execute()
+        { }
+
+        public void Execute(int arg)
+        {
+            DoPrivate(arg);
+        }
+
+        public static void Submit()
+        { }
+
+        public int Execute(int arg1, int arg2)
+        {
+            throw new NotImplementedException();
+        }
+
+        public event EchoEventHandler OnEchoCallback;
+
+        public IList<object> FakeCollection()
+        {
+            var resultCollection = new List<object>();
+
+            resultCollection.Add("asd");
+            resultCollection.Add(123);
+            resultCollection.Add(true);
+
+            return resultCollection;
+        }
 
         private void DoPrivate()
         {
@@ -74,14 +70,6 @@ namespace SampleCodeBase.JustMockExamples
         public void DoPublic()
         {
             DoPrivate();
-        }
-
-        public void Execute()
-        { }
-
-        public void Execute(int arg)
-        {
-            DoPrivate(arg);
         }
 
         private int PrivateEcho(int arg)
