@@ -78,6 +78,7 @@
     <Compile Include="MethodPropertiesWithBusinessValue\ClassWithBusinessLogic2.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\ClassWithMethods.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\ClassWithProperties.cs" />
+    <Compile Include="MethodPropertiesWithBusinessValue\DependencySetupExmaple.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\IRequiredPrep.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\Required.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\RequiredPrep.cs" />

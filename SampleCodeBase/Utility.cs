@@ -9,6 +9,12 @@ namespace SampleCodeBase
             throw new Exception("Hello");
         }
 
+        public static void ThrowExceptionDifferent()
+        {
+            throw new Exception("Different");
+        }
+
+
         public static void ThrowException(string message)
         {
             throw new Exception(message);
