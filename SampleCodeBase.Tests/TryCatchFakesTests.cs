@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Fakes;
 using System.IO;
 using System.Reflection;
 using System.Text;
@@ -86,7 +87,6 @@ namespace SampleCodeBase.Tests
         public void ShouldInvokeNonPublicMemberDynamic()
         {
             // Arrange
-          
             Mock.Arrange(() => new Foo()).DoNothing();
             Foo foo = new Foo();
             dynamic fooAcc = Mock.NonPublic.Wrap(foo);

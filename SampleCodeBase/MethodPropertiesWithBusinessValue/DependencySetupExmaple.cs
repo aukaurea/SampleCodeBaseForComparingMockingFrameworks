@@ -58,8 +58,7 @@
 
         /// <summary>
         ///     To test this method we need to find invocation expression of "BusinessMethod" in "BusinessMethodInitial2" and
-        ///     "BusinessMethodInitial"
-        ///     And create two test method accordingly.
+        ///     "BusinessMethodInitial" and create two test method accordingly.
         /// </summary>
         /// <param name="x"></param>
         /// <param name="somethingComplex"></param>
@@ -127,7 +126,7 @@
         {
             // do some complex stuff.
             Utility.ThrowException("Needs to be coveredWWWW"); // this method needs to be Faked and covered
-            var intX = (int) sample + 5 + IntThrows + IntStaticThrows;
+            var intX = (int) 1 + 5 + IntThrows + IntStaticThrows;
         }
     }
 }
