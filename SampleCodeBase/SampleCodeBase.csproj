@@ -51,6 +51,10 @@
   <ItemGroup>
     <Compile Include="GenericClass\ActualGenericExampleClassBusinessLogic.cs" />
     <Compile Include="GenericClass\GenericExampleClass.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="Model\EnumRangeModel.cs" />
+    <Compile Include="Interface\IEnumRangeModel.cs" />
+    <Compile Include="IfElseExample2.cs" />
     <Compile Include="JustMockExamples\BarExtensions.cs" />
     <Compile Include="JustMockExamples\Calculus.cs" />
     <Compile Include="JustMockExamples\ClassWithNonPublicMembers.cs" />
