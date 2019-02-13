@@ -52,6 +52,8 @@
     <Compile Include="GenericClass\ActualGenericExampleClassBusinessLogic.cs" />
     <Compile Include="GenericClass\GenericExampleClass.cs" />
     <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="Helpers\ReflectionTypeHelper.cs" />
+    <Compile Include="MethodPropertiesWithBusinessValue\DynamicMethodParameterExamples.cs" />
     <Compile Include="Model\EnumRangeModel.cs" />
     <Compile Include="Interface\IEnumRangeModel.cs" />
     <Compile Include="IfElseExample2.cs" />
@@ -83,7 +85,7 @@
     <Compile Include="MethodPropertiesWithBusinessValue\ClassWithMethods.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\ClassWithProperties.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\DependencySetupExmaple.cs" />
-    <Compile Include="MethodPropertiesWithBusinessValue\ExampleEnum1.cs" />
+    <Compile Include="StaticType\ExampleEnum1.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\IRequiredPrep.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\Required.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\RequiredPrep.cs" />

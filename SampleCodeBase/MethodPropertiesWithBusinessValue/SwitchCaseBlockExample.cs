@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SampleCodeBase.Helpers;
+using SampleCodeBase.StaticType;
 
 namespace SampleCodeBase.MethodPropertiesWithBusinessValue
 {

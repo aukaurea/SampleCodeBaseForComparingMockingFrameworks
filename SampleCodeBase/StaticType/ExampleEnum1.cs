@@ -1,4 +1,4 @@
-﻿namespace SampleCodeBase.MethodPropertiesWithBusinessValue
+﻿namespace SampleCodeBase.StaticType
 {
     public enum ExampleEnum1
     {

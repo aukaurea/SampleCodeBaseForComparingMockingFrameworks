@@ -1,4 +1,6 @@
-﻿namespace SampleCodeBase.Helpers
+﻿using SampleCodeBase.Interface;
+
+namespace SampleCodeBase.Model
 {
     public class EnumRangeModel : IEnumRangeModel
     {
