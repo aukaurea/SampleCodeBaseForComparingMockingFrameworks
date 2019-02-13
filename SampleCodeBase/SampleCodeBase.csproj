@@ -52,7 +52,6 @@
     <Compile Include="GenericClass\ActualGenericExampleClassBusinessLogic.cs" />
     <Compile Include="GenericClass\GenericExampleClass.cs" />
     <Compile Include="Helpers\EnumHelper.cs" />
-    <Compile Include="Helpers\ReflectionTypeHelper.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\DynamicMethodParameterExamples.cs" />
     <Compile Include="Model\EnumRangeModel.cs" />
     <Compile Include="Interface\IEnumRangeModel.cs" />
