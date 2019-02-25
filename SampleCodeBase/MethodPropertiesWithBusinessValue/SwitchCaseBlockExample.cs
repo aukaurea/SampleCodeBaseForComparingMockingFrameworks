@@ -8,10 +8,128 @@ using SampleCodeBase.StaticType;
 
 namespace SampleCodeBase.MethodPropertiesWithBusinessValue
 {
+    public class SampleGetterValue{
+
+        public SampleGetterValue(IRequiredPrep required)
+        {
+            
+        }
+
+        public int GetGetterInt()
+        {
+            return Guid.NewGuid().GetHashCode();
+        }
+
+        public int GetGetterIntRandom2()
+        {
+            return Guid.NewGuid().GetHashCode() + GetGetterInt();
+        }
+    }
+
     public class SwitchCaseBlockExample
     {
         public SwitchCaseBlockExample()
         { }
+
+        public void SwitchCaseExample5(int? x)
+        {
+            switch (x.Value)
+            {
+                case (int) ExampleEnum1.Example1:
+                    Console.WriteLine("example1");
+                    Exmaple1();
+
+                    break;
+
+                case (int) ExampleEnum1.Example2:
+                    Console.WriteLine("example2");
+                    Exmaple1();
+
+                    break;
+
+
+                case (int) ExampleEnum1.Example3:
+                    Console.WriteLine("example2");
+                    Exmaple1();
+
+                    break;
+
+                default:
+                    Console.WriteLine("default");
+                    Exmaple1();
+
+                    break;
+
+            }
+        }
+
+        public void SwitchCaseExample6(int? x)
+        {
+            var ir = new RequiredPrep();
+            var w1 = new SampleGetterValue(ir);
+
+            var w = w1.GetGetterInt();
+            var w3 = w1.GetGetterIntRandom2();
+
+            switch (w)
+            {
+                case (int) ExampleEnum1.Example1:
+                    Console.WriteLine("example1");
+                    Exmaple1();
+
+                    break;
+
+                case (int) ExampleEnum1.Example2:
+                    Console.WriteLine("example2");
+                    Exmaple1();
+
+                    break;
+
+
+                case (int) ExampleEnum1.Example3:
+                    Console.WriteLine("example2");
+                    Exmaple1();
+
+                    break;
+
+                default:
+                    Console.WriteLine("default");
+                    Exmaple1();
+
+                    break;
+
+            }
+
+
+            switch (w3)
+            {
+                case (int) ExampleEnum1.Example1:
+                    Console.WriteLine("example1");
+                    Exmaple1();
+
+                    break;
+
+                case (int) ExampleEnum1.Example2:
+                    Console.WriteLine("example2");
+                    Exmaple1();
+
+                    break;
+
+
+                case (int) ExampleEnum1.Example3:
+                    Console.WriteLine("example2");
+                    Exmaple1();
+
+                    break;
+
+                default:
+                    Console.WriteLine("default");
+                    Exmaple1();
+
+                    break;
+
+            }
+        }
 
         public void SwitchCaseExample1(int x)
         {
