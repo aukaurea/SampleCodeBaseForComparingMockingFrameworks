@@ -26,16 +26,45 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
         }
     }
 
-    public static class ConstSwitch
+    internal static class ConstSwitch
     {
         public const string Sw1 = "Sw1";
         public const string Sw2 = "Sw2";
         public const string Sw3 = "Sw3";
         public const string Sw4 = "Sw4";
+
+        internal struct Const2Switch
+        {
+            public const string Sw5 = "Sw5";
+            public const string Sw6 = "Sw6";
+
+            internal struct Const3Switch
+            {
+                public const string Sw5 = "Sw5";
+                public const string Sw6 = "Sw6";
+
+                internal struct Const4Switch
+                {
+                    public const string Sw5 = "Sw5";
+                    public const string Sw6 = "Sw6";
+                }
+            }
+
+
+        }
     }
 
     public class SwitchCaseBlockExample
     {
+        public readonly SampleGetterValue SampleGetterValue1 = new SampleGetterValue(new RequiredPrep(), String.Empty);
+        private readonly SampleGetterValue PrivateSampleGetterValue2 = new SampleGetterValue(new RequiredPrep(), String.Empty);
+
+        private SampleGetterValue GetNewSampleGetterValue(string str)
+        {
+            return new SampleGetterValue(new RequiredPrep(), str);
+        }
+
+
         public SwitchCaseBlockExample()
         { }
 
@@ -70,7 +99,6 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
 
             }
         }
-
 
         public void SwitchCaseExampleStringEx1(string x)
         {
@@ -110,6 +138,7 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
                 case ConstSwitch.Sw1:
                     Console.WriteLine("example1");
                     Exmaple1();
+
 
                     break;
 
@@ -152,6 +181,19 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
             {
                 case (int) ExampleEnum1.Example1:
                     Console.WriteLine("example1");
+                    var ir2 = new RequiredPrep();
+                    var xw2 = ir.SampleMethodString();
+                    var w12 = new SampleGetterValue(ir2, xw2);
+                    var mDifferentW12Getting = w12.GetGetterInt();
+                    var ard = ConstSwitch.Sw1;
+                    var actualGetterValue = this.GetNewSampleGetterValue("23233223" + ConstSwitch.Sw1);
+                    var actualGetterValue2 = this.GetNewSampleGetterValue("23233223" + ConstSwitch.Sw1);
+
+                    var md = ConstSwitch.Const2Switch.Sw5;
+                    var md2 = ConstSwitch.Const2Switch.Const3Switch.Const4Switch.Sw5;
+
+                    var w33 = md2.ToString();
+
                     Exmaple1();
 
                     break;
