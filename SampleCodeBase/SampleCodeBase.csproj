@@ -52,6 +52,8 @@
     <Compile Include="GenericClass\ActualGenericExampleClassBusinessLogic.cs" />
     <Compile Include="GenericClass\GenericExampleClass.cs" />
     <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="MemoryLeakExample\DisposableWithMemoryLeak.cs" />
+    <Compile Include="MemoryLeakExample\DisposableWithoutMemoryLeak.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\DynamicMethodParameterExamples.cs" />
     <Compile Include="Model\EnumRangeModel.cs" />
     <Compile Include="Interface\IEnumRangeModel.cs" />
@@ -79,8 +81,6 @@
     <Compile Include="JustMockExamples\NerdDinners.cs" />
     <Compile Include="JustMockExamples\RSVP.cs" />
     <Compile Include="JustMockExamples\UserData.cs" />
-    <Compile Include="MemoryLeakExample\ClassWithMemoryLeak.cs" />
-    <Compile Include="MemoryLeakExample\ClassWithoutMemoryLeak.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\ClassWithBusinessLogic.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\ClassWithBusinessLogic2.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\ClassWithMethods.cs" />
