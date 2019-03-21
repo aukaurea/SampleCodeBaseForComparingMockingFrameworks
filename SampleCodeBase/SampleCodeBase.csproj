@@ -51,6 +51,11 @@
   <ItemGroup>
     <Compile Include="GenericClass\ActualGenericExampleClassBusinessLogic.cs" />
     <Compile Include="GenericClass\GenericExampleClass.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="MethodPropertiesWithBusinessValue\DynamicMethodParameterExamples.cs" />
+    <Compile Include="Model\EnumRangeModel.cs" />
+    <Compile Include="Interface\IEnumRangeModel.cs" />
+    <Compile Include="IfElseExample2.cs" />
     <Compile Include="JustMockExamples\BarExtensions.cs" />
     <Compile Include="JustMockExamples\Calculus.cs" />
     <Compile Include="JustMockExamples\ClassWithNonPublicMembers.cs" />
@@ -81,9 +86,11 @@
     <Compile Include="MethodPropertiesWithBusinessValue\ClassWithMethods.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\ClassWithProperties.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\DependencySetupExmaple.cs" />
+    <Compile Include="StaticType\ExampleEnum1.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\IRequiredPrep.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\Required.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\RequiredPrep.cs" />
+    <Compile Include="MethodPropertiesWithBusinessValue\SwitchCaseBlockExample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleTestDetectClass.cs" />

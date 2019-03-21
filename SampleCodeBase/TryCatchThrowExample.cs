@@ -167,6 +167,7 @@ namespace SampleCodeBase
         private bool DatabaseCallPauseFor30SecondsAndThrowsReturnsTrue()
         {
             DatabaseCallPauseFor30SecondsAndThrows();
+            // code blocks more than 40 sec
             return true;
         }
 
