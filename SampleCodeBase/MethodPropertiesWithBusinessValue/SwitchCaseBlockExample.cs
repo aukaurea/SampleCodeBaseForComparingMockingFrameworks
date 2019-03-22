@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using SampleCodeBase.Helpers;
 using SampleCodeBase.StaticType;
 
@@ -10,10 +12,14 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
 {
     public class SampleGetterValue{
 
-        public SampleGetterValue(IRequiredPrep required, string w)
+        public SampleGetterValue(IRequiredPrep required, string w, IList<string> list)
         {
             
         }
+
+        public SampleGetterValue(
+                ICollection<string> collection)
+        { }
 
         public int GetGetterInt()
         {
@@ -32,6 +38,7 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
         public const string Sw2 = "Sw2";
         public const string Sw3 = "Sw3";
         public const string Sw4 = "Sw4";
+        public readonly static ICollection<string> StringCollection = new List<string>(5);
 
         internal struct Const2Switch
         {
@@ -56,17 +63,19 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
 
     public class SwitchCaseBlockExample
     {
-        public readonly SampleGetterValue SampleGetterValue1 = new SampleGetterValue(new RequiredPrep(), String.Empty);
-        private readonly SampleGetterValue PrivateSampleGetterValue2 = new SampleGetterValue(new RequiredPrep(), String.Empty);
+        public readonly SampleGetterValue SampleGetterValue1 = new SampleGetterValue(new RequiredPrep(), String.Empty, new List<string>());
+        private readonly SampleGetterValue PrivateSampleGetterValue2 = new SampleGetterValue(new RequiredPrep(), String.Empty, new List<string>());
+        private List<string> _fieldListString;
 
         private SampleGetterValue GetNewSampleGetterValue(string str)
         {
-            return new SampleGetterValue(new RequiredPrep(), str);
+            return new SampleGetterValue(new RequiredPrep(), str, _fieldListString);
         }
 
-
         public SwitchCaseBlockExample()
-        { }
+        {
+            _fieldListString = new List<string>();
+        }
 
         public void SwitchCaseExample5(int? x)
         {
@@ -172,7 +181,7 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
         {
             var ir = new RequiredPrep();
             var xw = ir.SampleMethodString();
-            var w1 = new SampleGetterValue(ir, xw);
+            var w1 = new SampleGetterValue(ir, 1 + (string) 2.ToString() + xw + "" as string + _fieldListString.FirstOrDefault(), _fieldListString);
 
             var w = w1.GetGetterInt();
             var w3 = w1.GetGetterIntRandom2();
@@ -183,11 +192,13 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
                     Console.WriteLine("example1");
                     var ir2 = new RequiredPrep();
                     var xw2 = ir.SampleMethodString();
-                    var w12 = new SampleGetterValue(ir2, xw2);
+                    var w12 = new SampleGetterValue(ir2, xw2 + string.Empty, _fieldListString);
+                    var w1332 = new SampleGetterValue(ConstSwitch.StringCollection);
                     var mDifferentW12Getting = w12.GetGetterInt();
                     var ard = ConstSwitch.Sw1;
                     var actualGetterValue = this.GetNewSampleGetterValue("23233223" + ConstSwitch.Sw1);
-                    var actualGetterValue2 = this.GetNewSampleGetterValue("23233223" + ConstSwitch.Sw1);
+                    var actualGetterValue2 = this.GetNewSampleGetterValue(
+                            "23233223" + ConstSwitch.Sw1);
 
                     var md = ConstSwitch.Const2Switch.Sw5;
                     var md2 = ConstSwitch.Const2Switch.Const3Switch.Const4Switch.Sw5;

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SampleCodeBase;
 
 namespace SampleWindowsForm
 {
@@ -15,6 +16,13 @@ namespace SampleWindowsForm
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DuplicateFinder.GetDuplicatesCount(this.inputForDuplicateFindingTextBox.Text, out var result);
+
+            this.outputForDuplicateFindingTextBox.Text = result;
         }
     }
 }

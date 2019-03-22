@@ -56,7 +56,7 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
 
             _list.Add("Sample");
             _list.Add("Sample2");
-            _list.Add("Sampl3");
+            _list.Add("Sample3");
             _list.Add("Sample4");
             _list.Add("Sample5");
             _list.Add("Sample6");
