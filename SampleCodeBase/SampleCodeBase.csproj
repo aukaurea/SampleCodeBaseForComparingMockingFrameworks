@@ -49,6 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DependencyInjection\ClassWithMethodCallingMethodReturningReferenceType.cs" />
+    <Compile Include="DependencyInjection\ClassWithMethodCallingMethodReturningBoolean.cs" />
+    <Compile Include="DependencyInjection\Foo.cs" />
+    <Compile Include="DependencyInjection\IServiceInterface.cs" />
     <Compile Include="GenericClass\ActualGenericExampleClassBusinessLogic.cs" />
     <Compile Include="GenericClass\GenericExampleClass.cs" />
     <Compile Include="Helpers\EnumHelper.cs" />
