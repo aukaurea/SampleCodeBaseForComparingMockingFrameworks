@@ -11,10 +11,11 @@ using SampleCodeBase.StaticType;
 namespace SampleCodeBase.MethodPropertiesWithBusinessValue
 {
     public class SampleGetterValue{
+        public IRequiredPrep Required1 { get; }
 
         public SampleGetterValue(IRequiredPrep required, string w, IList<string> list)
         {
-            
+            Required1 = required;
         }
 
         public SampleGetterValue(
@@ -27,6 +28,11 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
         }
 
         public int GetGetterIntRandom2()
+        {
+            return Guid.NewGuid().GetHashCode() + GetGetterInt();
+        }
+
+        public int GetGetterIntRandom2(IRequiredPrep ir, string x)
         {
             return Guid.NewGuid().GetHashCode() + GetGetterInt();
         }
@@ -181,7 +187,11 @@ namespace SampleCodeBase.MethodPropertiesWithBusinessValue
         {
             var ir = new RequiredPrep();
             var xw = ir.SampleMethodString();
+            var xw22String = ir.SampleMethodString(ir, 1 + (string) 2.ToString() + xw + "" as string + _fieldListString.FirstOrDefault(), DateTime.Now, ir);
             var w1 = new SampleGetterValue(ir, 1 + (string) 2.ToString() + xw + "" as string + _fieldListString.FirstOrDefault(), _fieldListString);
+            var sringArr = new string[23];
+            var intArrr = new int[10];
+            var intList = new List<int>(1);
 
             var w = w1.GetGetterInt();
             var w3 = w1.GetGetterIntRandom2();
