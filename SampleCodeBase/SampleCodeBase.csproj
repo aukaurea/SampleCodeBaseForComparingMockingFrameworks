@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DelegateExamples\NonVoidDelegate.cs" />
     <Compile Include="DoubleNamespaceExample\DoubleNamespaceExample4.cs" />
     <Compile Include="DoubleNamespaceExample\DoubleNamespaceExampleNoNamespace.cs" />
     <Compile Include="DuplicateFinder.cs" />
