@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DependencyInjection\ClassWithMethodCallingMethodReturningReferenceType.cs" />
-    <Compile Include="DependencyInjection\ClassWithMethodCallingMethodReturningBoolean.cs" />
+    <Compile Include="DependencyInjection\ClassUsingMethodOfInjectedService.cs" />
     <Compile Include="DependencyInjection\Foo.cs" />
     <Compile Include="DependencyInjection\IServiceInterface.cs" />
     <Compile Include="GenericClass\ActualGenericExampleClassBusinessLogic.cs" />
