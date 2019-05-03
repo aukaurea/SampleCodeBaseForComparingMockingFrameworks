@@ -54,6 +54,7 @@
     <Compile Include="DoubleNamespaceExample\DoubleNamespaceExampleNoNamespace.cs" />
     <Compile Include="DuplicateFinder.cs" />
     <Compile Include="GenericClass\ActualGenericExampleClassBusinessLogic.cs" />
+    <Compile Include="GenericClass\GenericArgumentExamples.cs" />
     <Compile Include="GenericClass\GenericExampleClass.cs" />
     <Compile Include="Helpers\EnumHelper.cs" />
     <Compile Include="MethodPropertiesWithBusinessValue\DynamicMethodParameterExamples.cs" />
